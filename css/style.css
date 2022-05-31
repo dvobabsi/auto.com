@@ -486,7 +486,7 @@ h2 {
     width: 30%;
     right: 0px;
     position: absolute;
-    height: calc(100% + 190px);
+    height: calc(80% + 190px);
     background-color: #F0F0F0;
     background-repeat: no-repeat;
     background-size: cover;
