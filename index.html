@@ -1,0 +1,1031 @@
+﻿<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/chief-slider.css">
+    <link rel="stylesheet" href="css/reviews_slider.css">
+    
+    <style>
+
+        
+
+        .slider__wrapper {
+            overflow: hidden;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .slider__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .slider__item {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .slider__item {
+                flex: 0 0 33.3333333333%;
+                max-width: 33.3333333333%;
+            }
+        }
+
+        .slider__item-content {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .slider__content_header {
+            position: relative;
+        }
+
+        .slider__content_img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .slider__content_section {
+            position: absolute;
+            bottom: 6px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 6px 10px;
+            font-size: 14px;
+            border-radius: 12px;
+            line-height: 1;
+        }
+
+        .slider__content_title {
+            background: #fafafa;
+            color: #424242;
+            white-space: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.3;
+            padding: 10px 15px;
+            margin: 0;
+            height: 52px;
+        }
+
+        .slider__content_footer {
+            background: #fafafa;
+            display: flex;
+            padding: 20px 15px;
+            color: #616161;
+        }
+
+        .slider__content_avatar {
+            flex: 0 0 40px;
+            max-width: 40px;
+        }
+
+        .slider__content_photo {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .slider__content_author {
+            margin-left: 8px;
+            line-height: 40px;
+        }
+
+        .slider__content_icon {
+            height: 18px;
+            margin-top: 12px;
+            margin-left: auto;
+        }
+
+        .slider__content_views {
+            margin-left: 4px;
+            line-height: 40px;
+        }
+
+        .slider__control {
+            background-color: unset;
+        }
+
+        .slider__control:hover,
+        .slider__control:focus {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .slider__indicators {
+            bottom: -35px;
+        }
+
+        .slider__indicators li {
+            background-color: #eee;
+        }
+
+        .slider__indicators li.active {
+            background-color: #757575;
+        }
+    </style>
+    <title>Пригон авто з Європи Черкаси, Сміла - MaxAutohunter</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Блок header сама шапка-->
+        <header>
+            <div class="header__body">
+                <a id="top" href="#" class="header__logo">
+                    <img src="img/iconeMaxHanter.png" class="logoImg" alt="">
+                </a>
+                <div class="header__berger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <!-- <a id="top" href="#" class="header__logo">
+                        <img src="img/iconeMaxHanter.png" class="logoImg" alt="">
+                    </a> -->
+                    <ul class="header__list">
+                        <li><a href="#about" class="header__link">Про мене</a></li>
+                        <li><a href="#auto" class="header__link"> Авто</a></li>
+                        <li><a href="#services" class="header__link"">Послуги та ціни</a></li>
+                        <li><a href="#faq" class="header__link"">F.A.Q.</a></li>
+                        <li><a href="#reviews" class="header__link"">Відгуки</a></li>
+                        <li><a href="#contacts" class="header__link"">Контакти</a></li>
+                    </ul>
+                    
+                    <div class=" social_lang">
+                        <div class="social_header">
+                            <ul class="social_header_list">
+                                <li><a href="#"><img class="social_header_img" src="img/soc/facebook-30.svg"
+                                                        alt=""></a></li>
+                                <li><a href="#"><img class="social_header_img" src="img/soc/instagram-30.svg"
+                                                        alt=""></a></li>
+                            </ul>
+                            <!-- <ul class="language">
+                                <li><a href="#" class="lang_ua">Укр</a></li>
+                                <li><a href="#" class="lang_ru">Рус</a></li>
+                            </ul> -->
+                        </div>
+                        <div>
+                            <ul class="language">
+                                <li><a href="#" class="lang_ua">Укр</a></li>
+                                <li><a href="#" class="lang_ru">Рус</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <div class=" social_lang">
+                    <div class="social_header">
+                        <ul class="social_header_list">
+                            <li><a href="#"><img class="social_header_img" src="img/soc/facebook-30.svg"
+                                                    alt=""></a></li>
+                            <li><a href="#"><img class="social_header_img" src="img/soc/instagram-30.svg"
+                                                    alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="language">
+                            <li><a href="#" class="lang_ua">Укр</a></li>
+                            <li><a href="#" class="lang_ru">Рус</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </header>
+    <!--Car-->
+    <section class="car">
+        <div class="car_bg">
+            <div class="container">
+                <div class="car_text">
+                    <h1>Пригон авто з Європи</h1>
+                    <h2>Півбір, Доставка, Розмитнення</h2>
+                    <p>Вполюємо для вас якісне авто без пробігу по Україні</p>
+                    <a href="#forma">Замовити прорахунок авто</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+    <main>
+        <!--Why?-->
+        <section class="why">
+            <div class="why_blocks">
+                <div class="why_cont">
+                    <div class="why_cont_wrap">
+                        <h3>Чому ми обираємо європейські авто?</h3>
+                        <div class="why_cont_four">
+                            <div class="why_cont_conteiner">
+                                <div class="why_cont_block">
+                                    <img class="why_icon" src="img/why/why_car.svg" alt="">
+                                    <h4>Якість</h4>
+                                    <p>Насамперед, ми шукаємо якісне, «не вбите» нашими дорогами авто. Надійність
+                                        автомобілів з пробігом в Європі набагато вище, ніж в Україні. Пробіги в Європі
+                                        НЕ КРУТЯТЬ. Я зустічав оголошення і з 400 тис пробігу. А у нас як? Все до 150
+                                        тис, навіть якщо це Golf 3.</p>
+                                </div>
+                                <div class="why_cont_block">
+                                    <img class="why_icon" src="img/why/why_list.svg" alt="">
+                                    <h4>Контроль</h4>
+                                    <p>В Європі є обв'язковим проходження технічного огляду. Це дуже важливо, тому що на
+                                        ньому можуть виявити технічні несправності. Власник авто буде змушений їх
+                                        усунути в найкоротший термін, адже без проходження техогляду пересуватись на
+                                        авто заборонено.</p>
+                                </div>
+                                <div class="why_cont_block">
+                                    <img class="why_icon" src="img/why/why_like.svg" alt="">
+                                    <h4>Технічний та візуальний стан</h4>
+                                    <p>В Європі середньостатистичний громадянин оновлює свій автопарк раз в п'ять-сім
+                                        років. Тому і авто, які вони продають, в досить хорошому технічному стані.
+                                        Відсутність гравію на дорогах дозволяє уникнути велизечної кількості сколів по
+                                        кузову авто.</p>
+                                </div>
+                                <div class="why_cont_block">
+                                    <img class="why_icon" src="img/why/why_tech.svg" alt="">
+                                    <h4>Обслуговування</h4>
+                                    <p>Автомобілі заправляються якісним пальним, від якого не псується турбіна, або
+                                        взагалі перестає заводитись мотор. На плановому сервісному обслуговуванні
+                                        заливається хороше мастило, встановлюються оригінальні запчастини, які
+                                        рекомендовані заводом-виробником. У більшості авто є сервісні книжки з
+                                        відмітками про регулярне проходження ТО.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why_img">
+                    <!--<img src="img/why/why_img.jpeg" alt="">-->
+                </div>
+            </div>
+        </section>
+        <!--Offer-->
+        <section class="offer">
+            <div class="offer_container">
+                <h3>Ми пропонуємо тільки якісні європейські авто з рідним пробігом і в хорошому технічному стані!</h3>
+                <div class="offer_list">
+                    <div class="offer_list_container">
+                        <div class="list">
+                            <!--<div class="list_box">
+
+                                </div>-->
+                            <img src="img/offer/offer1.svg" alt="">
+                            <p>Більше 500 000 км ми здолали, щоб привезти авто нашим клієнтам</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/offer/offer2.svg" alt="">
+                            <p>Завжди маємо кілька варіантів автомобілів в наявності</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/offer/offer3.svg" alt="">
+                            <p>Доставляємо власним автовозом, тому ціни нижчі, ніж у конкурентів</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/offer/offer4.svg" alt="">
+                            <p>Відразу називаємо кінцеву вартість автомобіля, включаючи всі послуги</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/offer/offer5.svg" alt="">
+                            <p>Відразу оговорюємо терміни покупки і привозу автомобіля, щоб клієнт реально оцінював
+                                ситуацію</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/offer/offer6.svg" alt="">
+                            <p>Ми категорично проти поширеної в Україні практики скручування пробігу</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about_container">
+                    <div class="about_left">
+                        <h3>Про мене</h3>
+                        <div>Мене звуть Максим Царіннік. Мій <a class="about_link" href="#">Instagram</a> та <a
+                                class="about_link" href="">Facebook</a>.</div>
+                        <p>Я займаюся пригоном автомобілів з Європи. <br /> За фахом я - автоінженер, закінчив НТУ, м.
+                            Київ. З автомобілями працюю вже понад 10 років.</p>
+                        <p>Тут не буде гучних заяв про мою експертність і професіоналізмі. За 3 роки роботи
+                            далекобійником на автовозі я об'їздив всю Європу і можу сказати просто: в машинах я дійсно
+                            розбираюся. Підтвердженням тому є задоволені клієнти з мого рідного міста Сміла (Черкаська
+                            обл.), які вірять мені на слово. Адже якщо пробіг скручений або який-небудь елемент кузова
+                            фарбований, то рано чи пізно це спливе.</p>
+                        <p>Я цього не боюся, тому що ЧЕСНІСТЬ - головне правило моєї роботи. За якість я відповідаю
+                            своєю репутацією!</p>
+                    </div>
+                    <div class="about_right">
+                        <div class="about_right_bg"></div>
+                        <!--<img src="img/about_img.jpg" alt="">-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Auto-->
+        <section id="auto" class="auto">
+            <div class="container">
+                <div class="auto_container">
+                    <div class="auto_header">
+                        <h3>Автомобілі, які ми підібрали клієнтам</h3>
+                        <p>Сам перевіряю кожне авто в три етапи:</p>
+                        <p>товщиномір, тестдрайв, звіт по VIN-коду</p>
+                    </div>
+                    <div class="slider" data-slider="chiefslider">
+                        <div class="slider__container">
+                            <div class="slider__wrapper">
+                                <div class="slider__items">
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img nissan">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Nissan Qashqai 2007</p>
+                                                    <p class="auto_name">Nissan Qashqai</p>
+                                                    <p class="auto_info">Рік випуску: 2007<br />
+                                                        Двигун: 1.6 бензин<br />
+                                                        КПП: механічна<br />
+                                                        Пробіг: 201 000 км<br />
+                                                        Комплектація: кондиціонер, литі диски, додаткові колеса<br />
+                                                        Без підкрасів</p>
+                                                    <p class="auto_price">Ціна: 8500$</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img renault_clio">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Renault Clio Grand Tour 2009
+                                                    </p>
+                                                    <p class="auto_name">Renault Clio Grand Tour</p>
+                                                    <p class="auto_info">Рік випуску: 2009<br />
+                                                        Двигун: 1.2 турбо бензин<br />
+                                                        КПП: механічна<br />
+                                                        Пробіг: 152 000 км<br />
+                                                        Комплектація: клімат-контроль, круїз-контроль,
+                                                        електросклопідйомники, регулювання дзеркал, литі диски.<br />
+                                                        Особливості: косметичний окрас кришки багажника, без шпаклівки.
+                                                    </p>
+                                                    <p class="auto_price">Ціна: 5600$</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img renault_meg_red">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Renault Megane 2012</p>
+                                                    <p class="auto_name">Renault Megane</p>
+                                                    <p class="auto_info">Рік випуску: 2012<br />
+                                                        Двигун: 1.5 дизель<br />
+                                                        КПП: механічна<br />
+                                                        Пробіг: 138 000 км<br />
+                                                        Комплектція: двозонний клімат-контроль, круїз-контроль,
+                                                        навігація, keyless доступ, задні парктроніки, датчики світла і
+                                                        дощу.<br />
+                                                        Без підкрасів</p>
+                                                    <p class="auto_price">Ціна: 7800 $</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img dacia_sanrero_red">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Dacia Sandero 2010</p>
+                                                    <p class="auto_name">Dacia Sandero</p>
+                                                    <p class="auto_info">Рік випуску: 2010<br />
+                                                        Двигун: 1.2 бензин<br />
+                                                        Пробіг: 52 000 км<br />
+                                                        Без подкрасів.<br />
+                                                        Дуже хороший стан!</p>
+                                                    <p class="auto_price">Ціна: 4750$</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img dacia_sanrero_w">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Dacia Sandero 2012</p>
+                                                    <p class="auto_name">Dacia Sandero</p>
+                                                    <p class="auto_info">Рік випуску: 2012<br />
+                                                        Двигун: 1.2 бензин<br />
+                                                        Пробіг: 96 000 км<br />
+                                                        Комплектація: кондиціонер, гідропідсилювач керма, управління
+                                                        магнітолою на кермі, гучний зв'язок через Blutoоth<br />
+                                                        Особливості: перефарбоване заднє ліве крило, задні ліві двері
+                                                    </p>
+                                                    <p class="auto_price">Ціна: 5200$</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img renault_megan_black">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Renault Megane 2013</p>
+                                                    <p class="auto_name">Renault Megane</p>
+                                                    <p class="auto_info">Рік випуску: 2013<br />
+                                                        Двигун: 1.4 л бензин<br />
+                                                        КПП: механічна<br />
+                                                        Пробіг: 214 000 км<br />
+                                                        Комлектация: комбінований салон, двозонний клімат-контроль,
+                                                        круїз-контроль, навігація, keyless доступ, передні і задні
+                                                        парктроніки, датчики світла і дощу, фаркоп, колонки BOSE.<br />
+                                                        Особливості: косметичний окрас капота, без шпаклівки.</p>
+                                                    <p class="auto_price">Ціна: 8800 $</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider__item">
+                                        <div class="slider__item-container">
+                                            <div class="slider__item-content">
+
+                                                <div class="auto_box">
+                                                    <div class="auto_img peugeot_308">
+                                                    </div>
+                                                    <p class="auto_name_top">Авто з Європи Peugeot 308 2015</p>
+                                                    <p class="auto_name">Peugeot 308</p>
+                                                    <p class="auto_info">Рік випуску: 2015<br />
+                                                        Двигун: 1.6 дизель 86 кВт<br />
+                                                        Пробіг: 188 888 км<br />
+                                                        Комплектація: двухзонний клімат-контоль, круїз-контроль, датчики
+                                                        світла, датчики дощу, підігрів сидінь, задні парктроніки, денні
+                                                        ходові вогні, литі диски, фаркоп и т.д.<br />
+                                                        Косметический підкрас однієї деталі</p>
+                                                    <p class="auto_price">Цена: 9500$</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="slider__control circle circle_left" data-slide="prev"></a>
+                        <a href="#" class="slider__control circle circle_right" data-slide="next"></a>
+                        <ol class="slider__indicators">
+                            <li data-slide-to="0"></li>
+                            <li data-slide-to="1"></li>
+                            <li data-slide-to="2"></li>
+                            <li data-slide-to="3"></li>
+                            <li data-slide-to="4"></li>
+                            <li data-slide-to="5"></li>
+                            <li data-slide-to="6"></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--Process-->
+        <section id="process" class="process">
+            <div class="process_bg">
+                <div class="container">
+                    <div class="process_container">
+                        <h3>Процес співпраці</h3>
+
+                        <div class="process_box">
+                            <div class="one_text text">Ми зв’язуємось з клієнтом, уточнюємо всі питання та домовляємося
+                                про зустріч.</div>
+                            <div class="one circle"><span class="line"></span>
+                                <div class="number_center">1</div>
+                            </div>
+                            <div></div>
+
+                            <div></div>
+                            <div class="two circle">
+                                <div class="number_center">2</div>
+                            </div>
+                            <div class="two_text text">Визначаємо ключові моменти для замовлення авто: бюджет, марку,
+                                модель авто. Визначаємо також пріорітети, те, що важливіше для клієнта: рік,
+                                комплектація чи пробіг і т.д.</div>
+
+                            <div class="three_text text">Оформлення договору. Внесення завдатку в розмірі 500 $.</div>
+                            <div class="three circle">
+                                <div class="number_center">3</div>
+                            </div>
+                            <div></div>
+
+                            <div></div>
+                            <div class="four circle">
+                                <div class="number_center">4</div>
+                            </div>
+                            <div class="four_text text">Пошук авто. Залежно від моделі процес може зайняти від 1 до 3
+                                тижнів.</div>
+
+                            <div class="five_text text">Огляд авто на місці, надання клієнту фото-, відеоматеріалів.
+                                Огляд здійснюю я особисто. Повідомляю про всі «нюанси». Без підтвердження з боку клієнта
+                                покупка авто не відбувається!</div>
+                            <div class="five circle">
+                                <div class="number_center">5</div>
+                            </div>
+                            <div></div>
+
+                            <div></div>
+                            <div class="six circle">
+                                <div class="number_center">6</div>
+                            </div>
+                            <div class="six_text text">Викуп авто і оформлення всіх необхідних документів.</div>
+
+                            <div class="seven_text text">Доставка авто автовозом в Україні (приблизно 1 тиждень, все
+                                залежить від черги на кордоні).</div>
+                            <div class="seven circle">
+                                <div class="number_center">7</div>
+                            </div>
+                            <div></div>
+
+                            <div></div>
+                            <div class="eight circle">
+                                <div class="number_center">8</div>
+                            </div>
+                            <div class="eight_text text">Митне очищення автомобіля. Отримання сертифікату відповідності.
+                            </div>
+
+                            <div class="nine_text text">Передача автомобіля клієнту, внесення решти коштів. Допомога з
+                                постановкою на облік, якщо потрібно.</div>
+                            <div class="nine circle">
+                                <div class="number_center">9</div>
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                        <!--
+                            <div class="process_box">
+                                <div class="one circle">1</div>
+                                <div class="one_text text">Ми зв’язуємось з клієнтом, уточнюємо всі питання та домовляємося про зустріч.</div>
+                            </div><div class="process_box">
+                                <div class="two circle">2</div>
+                                <div class="two_text text">Визначаємо ключові моменти для замовлення авто: бюджет, марку, модель авто. Визначаємо також пріорітети, те, що важливіше для клієнта: рік, комплектація чи пробіг і т.д.</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="three circle">3</div>
+                                <div class="three_text text">Оформлення договору. Внесення завдатку в розмірі 500 $.</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="four circle">4</div>
+                                <div class="four_text text">Пошук авто. Залежно від моделі процес може зайняти від 1 до 3 тижнів.</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="five circle">5</div>
+                                <div class="five_text text">Огляд авто на місці, надання клієнту фото-, відеоматеріалів. Огляд здійснюю я особисто. Повідомляю про всі «нюанси». Без підтвердження з боку клієнта покупка авто не відбувається!</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="six circle">6</div>
+                                <div class="six_text text">Викуп авто і оформлення всіх необхідних документів.</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="seven circle">7</div>
+                                <div class="seven_text text">Доставка авто автовозом в Україні (приблизно 1 тиждень, все залежить від черги на кордоні).</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="eight circle">8</div>
+                                <div class="eight_text text">Митне очищення автомобіля. Отримання сертифікату відповідності.</div>
+                            </div>
+                            <div class="process_box">
+                                <div class="nine circle">9</div>
+                                <div class="nine_text text">Передача автомобіля клієнту, внесення решти коштів. Допомога з постановкою на облік, якщо потрібно.</div>
+                            </div>
+                            -->
+
+
+                        <div class="process_text">Всі етапи своєї роботи показую в історіях <a href="#"
+                                class="about_link">Instagram</a> та <a href="#" class="about_link">Facebook</a>.
+                            Підписуйтеся!</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Services-->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="services_container">
+                    <h3>ПОСЛУГИ ТА ЦІНИ</h3>
+                    <div class="services_block">
+                        <div class="services_lr">
+                            <div class="serviced_img1"></div>
+                            <h4>Пригон авто з Європи "під ключ"</h4>
+                            <p class="services_price">500€</p>
+                            <ul class="services_list">
+                                <li>Підбір авто</li>
+                                <li>Огляд експертом на місці</li>
+                                <li>Оплата</li>
+                                <li>Підготовка всіх експортних документів</li>
+                                <li>Ограназація доставки</li>
+                            </ul>
+                            <div class="services_detals">
+                                <a href="#" class="services_link">Детальнише</a>
+                            </div>
+                        </div>
+                        <div class="services_lr">
+                            <div class="serviced_img2"></div>
+                            <h4>Доставка авто з Європи</h4>
+                            <p class="services_price">від 550€</p>
+                            <ul class="services_list">
+                                <li>Доставка автомобіля з пункта А в пункт Б на малому автовозі</li>
+                            </ul>
+                            <div class="services_detals">
+                                <a href="#" class="services_link">Детальнише</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Reviews-->
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <div class="reviews_container">
+                    <h3>Відгуки наших клієнтів</h3>
+                    <div class="reviews_slider">
+
+                        <!-- Основной блок слайдера -->
+                        <div class="slider2">
+
+                            <!-- Первый слайд -->
+                            <div class="item">
+                                <div class="reviews_slider_container">
+                                    <div class="reviews_img reviews_img1"></div>
+                                    <div class="reviews_text">
+                                        <div class="review">Максим, спасибо тебе большое за машину! Спасибо
+                                            за твою работу! Машина просто супер, мы все безумно рады!
+                                            Спасибо еще раз!</div>
+                                        <div class="review_name">Ігор</div>
+                                        <div class="review_city">м. Сміла</div>
+                                        <div class="review_inst"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Второй слайд -->
+                            <div class="item">
+                                <div class="reviews_slider_container">
+                                    <div class="reviews_img reviews_img2"></div>
+                                    <div class="reviews_text">
+                                        <div class="review">Дякую Вам за вашу роботу , авто просто супер ! Маю справу з вами не вперше , і ви як завжди на висоті , а головне чесність і порядність , не кожна людина може цим похвалитись , Ви можете ! Купував авто для дружини , але зізнаюсь сам люблю на ньому понавалювати , авто дійсно супер ! Ще раз дякую Вам за роботу!</div>
+                                        <div class="review_name">Валентин</div>
+                                        <div class="review_city">м. Сміла</div>
+                                        <div class="review_inst"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Кнопки-стрелочки -->
+                            <a class="previous" onclick="previousSlide()">&#10094;</a>
+                            <a class="next" onclick="nextSlide()">&#10095;</a>
+                        </div>
+
+                        <!--
+                        <div class="slider">
+                            <div class="slider__container">
+                                <div class="slider__wrapper">
+                                    <div class="slider__items">
+                                        <div class="slider__item">
+                                            <div class="reviews_slider_container">
+                                                <div class="reviews_img reviews_img1"></div>
+                                                <div class="reviews_text">
+                                                    <div class="review">Максим, спасибо тебе большое за машину! Спасибо
+                                                        за твою работу! Машина просто супер, мы все безумно рады!
+                                                        Спасибо еще раз!</div>
+                                                    <div class="review_name">Ігор</div>
+                                                    <div class="review_city">м. Сміла</div>
+                                                    <div class="review_inst"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="reviews_slider_container">
+                                                <div class="reviews_img reviews_img1"></div>
+                                                <div class="reviews_text">
+                                                    <div class="review">Максим, спасибо тебе большое за машину! Спасибо
+                                                        за твою работу! Машина просто супер, мы все безумно рады!
+                                                        Спасибо еще раз!</div>
+                                                    <div class="review_name">Ігор</div>
+                                                    <div class="review_city">м. Сміла2</div>
+                                                    <div class="review_inst"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="reviews_slider_container">
+                                                <div class="reviews_img reviews_img1"></div>
+                                                <div class="reviews_text">
+                                                    <div class="review">Максим, спасибо тебе большое за машину! Спасибо
+                                                        за твою работу! Машина просто супер, мы все безумно рады!
+                                                        Спасибо еще раз!</div>
+                                                    <div class="review_name">Ігор</div>
+                                                    <div class="review_city">м. Сміла3</div>
+                                                    <div class="review_inst"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="reviews_slider_container">
+                                                <div class="reviews_img reviews_img1"></div>
+                                                <div class="reviews_text">
+                                                    <div class="review">Максим, спасибо тебе большое за машину! Спасибо
+                                                        за твою работу! Машина просто супер, мы все безумно рады!
+                                                        Спасибо еще раз!</div>
+                                                    <div class="review_name">Ігор</div>
+                                                    <div class="review_city">м. Сміла4</div>
+                                                    <div class="review_inst"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="reviews_slider_container">
+                                                <div class="reviews_img reviews_img1"></div>
+                                                <div class="reviews_text">
+                                                    <div class="review">Максим, спасибо тебе большое за машину! Спасибо
+                                                        за твою работу! Машина просто супер, мы все безумно рады!
+                                                        Спасибо еще раз!</div>
+                                                    <div class="review_name">Ігор</div>
+                                                    <div class="review_city">м. Сміла5</div>
+                                                    <div class="review_inst"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="slider__control" data-slide="prev"></a>
+                            <a href="#" class="slider__control" data-slide="next"></a>
+                        </div>
+                        -->
+
+
+
+                        <!--
+                            <div class="reviews_slider_container">
+                                <div class="reviews_img reviews_img1"></div>
+                                <div class="reviews_text">
+                                    <div class="review">Максим, спасибо тебе большое за машину! Спасибо за твою работу! Машина просто супер, мы все безумно рады! Спасибо еще раз!</div>
+                                    <div class="review_name">Ігор</div>
+                                    <div class="review_city">м. Сміла</div>
+                                    <div class="review_inst"></div>
+                                </div>
+                            </div>
+                            -->
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--faq-->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="faq_container">
+                    <h3>Відповіді на типові запитання:</h3>
+                    <div class="faq_spoiler_block one">
+                        <div class="faq_spoiler_item">
+                            <div class="faq_spoiler_title">Чому ми вибираємо європейські авто?</div>
+                            <div class="faq_spoiler_text">
+                                <ol>
+                                    <li>Перш за все, тому що вони якісні, «не вбиті» нашими дорогами.</li>
+                                    <li>Автомобілі в Європі обслуговуються на сертифікованих сервісах, а не в гаражах в
+                                        кооперативі "Промінь". На плановому сервісному обслуговуванні заливається якісне
+                                        масло і встановлюються оригінальні запчастини, які рекомендовані
+                                        заводом-виробником. У більшості авто є сервісні книжки з відмітками про
+                                        регулярне проходження ТО.</li>
+                                    <li>Автомобілі в Європі заправляються якісним паливом, після якого не псується
+                                        турбіна, або взагалі перестає заводитися мотор.</li>
+                                    <li>В Європі обов'язково проходження технічного огляду. Це дуже важливо, тому що на
+                                        ньому можуть виявити технічні несправності, і власник машини буде змушений їх
+                                        усунути в найкоротші терміни, адже без проходження техогляду пересуватися на
+                                        авто ЗАБОРОНЕНО.</li>
+                                    <li>Авто з Європи добре доглянуті і зовні. По-перше, на автостраді немає гравію,
+                                        який усюди летить: і в капот, і в вікна, і фари. По-друге, німці, швейцарці в
+                                        цілому непогано стежать за тим, як виглядає їх транспорт, на відміну від,
+                                        наприклад, іспанців та італійців.</li>
+                                    <li>Якщо на авто з'явилися якісь пошкодження, то європейцю простіше продати його,
+                                        ніж ремонтувати, тому що ремонт там коштує дорого. Тому покупці можуть
+                                        розраховувати на значну знижку при покупці такого авто. І не обов'язково це буде
+                                        той випадок, коли потрібно перефарбувати півмашини.</li>
+                                    <li>У Німеччині, Франції, Нідерландах середньостатистичний громадянин оновлює свій
+                                        автопарк кожні 5-7 років. Тому і авто, які вони продають, в хорошому технічному
+                                        стані.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="faq_spoiler_item">
+                            <div class="faq_spoiler_title">А чи буде дешевше?</div>
+                            <div class="faq_spoiler_text">
+                                <p>Це найпоширеніше запитання від клієнтів. Знову ж таки, чудес не буває. Гарна машинка
+                                    скрізь буде коштувати грошей, і Швейцарія – не виключення.
+                                    Але є і гарна новина – дешевше буде! Яким саме чином?
+                                    При замовленні авто в мене ви сплачуєте сталу комісію, яка складає 500 у.о. Ніяких
+                                    додаткових платежів. Якщо ж купувати авто з наявності (в мене або в когось іншого),
+                                    комісія завжди буде вищою. Тому що:
+                                    вищі ризики – ніхто не знає, на який час заморожуються гроші, вкладені покупку в
+                                    авто;
+                                    додаткові витрати для зберігання авто;
+                                    виїзди на автобазари + пальне;
+                                    і найголовніше – це додатковий час, який я витрачаю на покази автомобіля, поїздки з
+                                    потенційними покупцями по різних «спеціалістах» на СТО та підборщиках.
+                                    Тому, замовляючи послугу по пригону авто, ви точно отримуєте перевагу.
+                                    З досвіду можу сказати, що економія складатиме від 500 $ при ціні авто до 10 000 $.
+                                </p>
+                                <ul>
+                                    <li>вищі ризики – ніхто не знає, на який час заморожуються гроші, вкладені покупку в
+                                        авто;</li>
+                                    <li>додаткові витрати для зберігання авто;</li>
+                                    <li>виїзди на автобазари + пальне;</li>
+                                    <li>і найголовніше – це додатковий час, який я витрачаю на покази автомобіля,
+                                        поїздки з потенційними покупцями по різних «спеціалістах» на СТО та підборщиках.
+                                    </li>
+                                </ul>
+                                <p>Тому, замовляючи послугу по пригону авто, ви точно отримуєте перевагу.
+                                    З досвіду можу сказати, що економія складатиме від 500 $ при ціні авто до 10 000 $.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq_spoiler_item">
+                            <div class="faq_spoiler_title">Які автомобілі не варто замовляти з Європи?</div>
+                            <div class="faq_spoiler_text">
+                                <ol>
+                                    <li>Машини з роком випуску менше 2008-2009. Все просто: чим старше авто, тим дорожче
+                                        розмитнення. Наприклад, останній раз ввозив два майже однакових Renault Clio,
+                                        різниця лише в роках випуску, 2008 і 2009. Розмитнення Clio 2009 вийшло на 400 €
+                                        дешевше. Також авто до 2008 року випуску важко знайти з низьким пробігом,
+                                        мінімумом підкрасів та в гарному технічному стані.</li>
+                                    <li>Деякі непопулярні в Україні марки авто: Alfa Romeo, Saab, Acura. Причина в тому,
+                                        що на такі машини буде важко знайти запчастини. А ми ж повинні думати наперед)
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="faq_spoiler_item">
+                            <div class="faq_spoiler_title">Документи на авто з Європи. Що повинно бути?</div>
+                            <div class="faq_spoiler_text">
+                                <p>Багато хто цікавиться: які документи повинні бути на машину з Європи? Щоб ви
+                                    орієнтувалися та не переймалися, що вас обманюють шахраї, - нижче список.</p>
+                                <ul>
+                                    <li>техпаспорт країни реєстрації з відміткою про зняття з обліку. В Швейцарії він
+                                        називається Fahrzeugausweis, а в Україні брокери та пригонщики називають його
+                                        «бріф».</li>
+                                    <li>документи з митниці: форма МД-2, форма МД-6 з мокрими печатками.</li>
+                                    <li>інвойс.</li>
+                                    <li>сертифікат відповідності.</li>
+                                </ul>
+                                <p>Ці документи потрібні для постановки автомобіля на облік в Сервісному центрі МВС. Як
+                                    бачите, не так багато.
+                                    На замітку про платежі, які сплачує покупець в Сервісному центрі МВС:</p>
+                                <ol>
+                                    <li>3% до Пенсійного фонду. Авто, яке ввезено з-за кордону, в Україні ставиться на
+                                        первинну реєстрацію. При цьому сплачується 3% до від оціночної вартості авто до
+                                        Пенсійного фонду (для кожного авто ця сума різна).</li>
+                                    <li>800 грн за послуги Сервісного Центру МВС, номерні знаки та техпаспорт.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Form-->
+        <section id="contacts" class="form">
+            <div class="container">
+                <div class="form_container">
+                    <h3>Контакти</h3>
+                    <p>Залиште свої контактні дані,</p>
+                    <p><b>і ми зв'яжемося з Вами протягом години!</b></p>
+                    <div class="forma_contacts">
+                        <div class="contacts">
+                            <h4>Контактна інформація</h4>
+                            <div class="number">
+                                <p>+38 093 382 20 79 Максим</p>
+                                <p>+38 098 176 58 98 Ксенія</p>
+                            </div>
+                            <div class="time">
+                                <p>Час роботи:</p>
+                                <p>Пн-сб: 08:00-20:00</p>
+                            </div>
+                            <div id="forma" class="form_soc">
+                                <ul class="social_form_list">
+                                    <li><a href="#"><img class="social_header_img" src="img/soc/facebook-30.png"
+                                                alt=""></a></li>
+                                    <li><a href="#"><img class="social_header_img" src="img/soc/instagram-30.png"
+                                                alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="forma" class="forma">
+                            <form class="form__colum" action="form_processing.php" method="post"
+                                enctype="multipart/form-data" name="order">
+                                <input class="form__input" tabindex="1" type="text" placeholder="Дмитро Бабич"
+                                    name="your_name" value="">
+                                <input class="form__input" tabindex="2" type="tel" placeholder="+380 (99) 999 99 99"
+                                    name="tel" value="">
+                                <input class="form__button" type="submit" value="Передзвоніть мені" name="done">
+                            </form>
+                            <p>Натискаючи на кнопку, Ви даєте згоду на обробку Ваших персональних даних.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="adress">
+                <h4>MaxAutohunter</h4>
+                <p>Пригон авто з Європи</p>
+                <p>м. Сміла, м.Черкаси</p>
+                <p>+38 093 382 20 79</p>
+            </div>
+            <div class="footer_soc">
+                <ul class="social_footer_list">
+                    <li><a href="#"><img class="social_footer_img" src="img/soc/facebook-30.svg" alt=""></a></li>
+                    <li><a href="#"><img class="social_footer_img" src="img/soc/instagram-30.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer_top">
+                <a href="#top">Вгору <span class="footer_strelka">&#8657;</span></a>
+                <!-- <p><a href="#top">Вгору <span class="footer_strelka">&#8657;</span></a></p> -->
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- Подключаем файл скриптов -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    
+	<script src="js/berger.js"></script>
+    <script src="js/reviews_slider.js"></script>
+    <script src="js/chief-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new ChiefSlider('.slider', {
+                loop: true,
+                autoplay: true,
+                interval: 6000,
+                refresh: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
