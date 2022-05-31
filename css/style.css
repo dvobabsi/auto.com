@@ -1,4 +1,4 @@
-﻿
+
 /*Обнуление*/
 *{
 	padding: 0;
@@ -532,6 +532,16 @@ h2 {
     row-gap: 30px;
 }
 
+@media (max-width: 768px) {
+    .why_cont_wrap>h3 {
+        margin: 80px 20px;
+    }
+
+    .why_cont_conteiner {
+        margin: 15px;
+    }
+}
+
 
 .why_icon {
     width: 50px;
@@ -588,8 +598,7 @@ h2 {
 @media (max-width: 768px) {
     .offer_container>h3 {
         font-size: 26px;
-        margin-top: 80px;
-        margin-bottom: 45px;
+        margin: 80px 20px 45px 20px;
     }
 }
 
@@ -610,11 +619,10 @@ h2 {
 
 @media (max-width: 768px) {
     .offer_list_container {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         column-gap: 50px;
         row-gap: 60px;
-        margin-top: 0px;
-        margin-bottom: 80px;
+        margin: 10px 20px 70px 20px;
     }
 }
 
@@ -980,9 +988,8 @@ a.circle.circle_right {
 
 @media (max-width: 768px) {
     .text {
-        font-size: 17px;
-        text-align: left;
-        padding: 30px;
+        font-size: 16px;
+        padding: 15px 2px 20px 26px;
     }
 }
 
@@ -1030,6 +1037,19 @@ a.circle.circle_right {
     left: 50%;
     z-index: 1;
 }
+
+@media (max-width: 1200px) {}
+
+@media (min-width: 991px) {}
+
+@media (max-width: 768px) {
+    .line {
+        right: 0%;
+        left: 51%;
+    }
+}
+
+@media (max-width: 479px) {}
 
 
 /*Services*/
@@ -1156,6 +1176,13 @@ a.circle.circle_right {
     background-color: #eeeeee;
 }
 
+@media (max-width: 768px) {
+    .reviews {
+        min-height: 100%;
+    }
+}
+
+
 
 .reviews_container {
 
@@ -1169,6 +1196,15 @@ a.circle.circle_right {
     text-align: center;
     padding-top: 60px;
     margin-bottom: 90px;
+}
+
+@media (max-width: 768px) {
+    .reviews_container>h3 {
+        font-size: 38px;
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 55px;
+    }
 }
 
 .reviews_slider {
@@ -1191,7 +1227,8 @@ a.circle.circle_right {
 
 @media (max-width: 768px) {
     .reviews_slider_container {
-        grid-template-columns: 35% auto;
+        grid-template-columns: auto;
+        grid-template-rows: 350px auto;
         max-width: 700px;
         min-height: 344px;
     }
@@ -1227,6 +1264,20 @@ a.circle.circle_right {
     color: #101010;
     margin-bottom: 20px;
 }
+@media (max-width: 1200px) {}
+
+@media (min-width: 991px) {}
+
+@media (max-width: 768px) {
+    .review {
+        font-size: 15px;
+        line-height: 1.45;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 479px) {}
+
 
 .review_name {
     font-size: 14px;
