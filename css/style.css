@@ -1049,7 +1049,11 @@ a.circle.circle_right {
     }
 }
 
-@media (max-width: 479px) {}
+@media (max-width: 479px) {
+    .line {
+        left: 53%;
+    }
+}
 
 
 /*Services*/
@@ -1626,37 +1630,3 @@ a.circle.circle_right {
     color: #fff;
     display: block;
 }
-
-
-
-
-@media (min-width: 991px) {
-    /* .why_cont_conteiner {
-        grid-template-columns: auto;
-    }
-
-    .why_img {
-        display: none;
-    }
-
-    .why_cont {
-        width: 81%;
-        margin: 0 auto;
-    }
-
-    .offer_container {
-        max-width: 800px;
-    } */
-
-}
-
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 479px) {}
-
-
