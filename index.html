@@ -1,204 +1,77 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Адаптив -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="css/chief-slider.css">
-    <link rel="stylesheet" href="css/reviews_slider.css">
     
-    <style>
-
-        
-
-        .slider__wrapper {
-            overflow: hidden;
-            margin-left: -5px;
-            margin-right: -5px;
-        }
-
-        .slider__item {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-
-        @media (min-width: 768px) {
-            .slider__item {
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .slider__item {
-                flex: 0 0 33.3333333333%;
-                max-width: 33.3333333333%;
-            }
-        }
-
-        .slider__item-content {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-
-        .slider__content_header {
-            position: relative;
-        }
-
-        .slider__content_img {
-            display: block;
-            height: auto;
-            max-width: 100%;
-        }
-
-        .slider__content_section {
-            position: absolute;
-            bottom: 6px;
-            left: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 6px 10px;
-            font-size: 14px;
-            border-radius: 12px;
-            line-height: 1;
-        }
-
-        .slider__content_title {
-            background: #fafafa;
-            color: #424242;
-            white-space: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 1.3;
-            padding: 10px 15px;
-            margin: 0;
-            height: 52px;
-        }
-
-        .slider__content_footer {
-            background: #fafafa;
-            display: flex;
-            padding: 20px 15px;
-            color: #616161;
-        }
-
-        .slider__content_avatar {
-            flex: 0 0 40px;
-            max-width: 40px;
-        }
-
-        .slider__content_photo {
-            display: block;
-            height: auto;
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
-        .slider__content_author {
-            margin-left: 8px;
-            line-height: 40px;
-        }
-
-        .slider__content_icon {
-            height: 18px;
-            margin-top: 12px;
-            margin-left: auto;
-        }
-
-        .slider__content_views {
-            margin-left: 4px;
-            line-height: 40px;
-        }
-
-        .slider__control {
-            background-color: unset;
-        }
-
-        .slider__control:hover,
-        .slider__control:focus {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        .slider__indicators {
-            bottom: -35px;
-        }
-
-        .slider__indicators li {
-            background-color: #eee;
-        }
-
-        .slider__indicators li.active {
-            background-color: #757575;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="css/chief-slider.css">
+    <link rel="stylesheet" href="css/reviews_slider.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Пригон авто з Європи Черкаси, Сміла - MaxAutohunter</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <!--Блок header сама шапка-->
-        <header>
+        <header class="header">
             <div class="header__body">
                 <a id="top" href="#" class="header__logo">
-                    <img src="img/iconeMaxHanter.png" class="logoImg" alt="">
+                    <img src="img/iconeMaxHanter.png" class="logoImg" alt="MaxAutohunter">
                 </a>
-                <div class="header__berger">
+                <div class="header__burger">
                     <span></span>
                 </div>
                 <nav class="header__menu">
-                    <!-- <a id="top" href="#" class="header__logo">
-                        <img src="img/iconeMaxHanter.png" class="logoImg" alt="">
-                    </a> -->
                     <ul class="header__list">
                         <li><a href="index.html#about" class="header__link">Про мене</a></li>
                         <li><a href="#auto" class="header__link"> Авто</a></li>
-                        <li><a href="#services" class="header__link"">Послуги та ціни</a></li>
-                        <li><a href="#faq" class="header__link"">F.A.Q.</a></li>
-                        <li><a href="#reviews" class="header__link"">Відгуки</a></li>
-                        <li><a href="#contacts" class="header__link"">Контакти</a></li>
+                        <li><a href="#services" class="header__link">Послуги та ціни</a></li>
+                        <li><a href="#faq" class="header__link">F.A.Q.</a></li>
+                        <li><a href="#reviews" class="header__link">Відгуки</a></li>
+                        <li><a href="#contacts" class="header__link">Контакти</a></li>
                     </ul>
                     
-                    <div class=" social_lang">
+                    <div class="social_lang">
                         <div class="social_header">
                             <ul class="social_header_list">
-                                <li><a href="#"><img class="social_header_img" src="img/soc/facebook-30.svg"
-                                                        alt=""></a></li>
-                                <li><a href="https://www.instagram.com/max_autohunter/"><img class="social_header_img" src="img/soc/instagram-30.svg"
-                                                        alt=""></a></li>
+                                <li class="social_item">
+                                    <a class="social__link" href="#">
+                                        <svg class="social_svg" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="22px" height="22px">
+                                            <path d="M12,27V15H8v-4h4V8.852C12,4.785,13.981,3,17.361,3c1.619,0,2.475,0.12,2.88,0.175V7h-2.305C16.501,7,16,7.757,16,9.291V11 h4.205l-0.571,4H16v12H12z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="https://www.instagram.com/max_autohunter/">
+                                        <svg class="social_svg" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="22px" height="22px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg>
+                                    </a>
+                                </li>
                             </ul>
-                            <!-- <ul class="language">
-                                <li><a href="#" class="lang_ua">Укр</a></li>
-                                <li><a href="#" class="lang_ru">Рус</a></li>
-                            </ul> -->
                         </div>
                         <div>
                             <ul class="language">
-                                <li><a href="#" class="lang_ua">Укр</a></li>
-                                <li><a href="#" class="lang_ru">Рус</a></li>
+                                <li><a href="#" class="lang ua">Укр</a></li>
+                                <!-- <li><a href="#" class="lang ru">Рус</a></li> -->
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
+            <section class="car">
+                <div class="container">
+                    <div class="car_text">
+                        <h1 class="car__title">Пригон авто з Європи</h1>
+                        <h2 class="car__subtitle">Півбір, Доставка, Розмитнення</h2>
+                        <p class="car__text">Вполюємо для вас якісне авто без пробігу по Україні</p>
+                        <a class="car__link" href="#">Замовити прорахунок авто</a>
+                        <!-- <a href="https://forms.gle/fz8WZG854j3V39ZXA">Замовити прорахунок авто</a> -->
+                    </div>
+                </div>
+            </section>
         </header>
     <!--Car-->
-    <section class="car">
-        <div class="car_bg">
-            <div class="container">
-                <div class="car_text">
-                    <h1>Пригон авто з Європи</h1>
-                    <h2>Півбір, Доставка, Розмитнення</h2>
-                    <p>Вполюємо для вас якісне авто без пробігу по Україні</p>
-                    <a href="https://forms.gle/fz8WZG854j3V39ZXA">Замовити прорахунок авто</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    </header>
+    
     <main>
         <!--Why?-->
         <section class="why">
@@ -209,7 +82,7 @@
                         <div class="why_cont_four">
                             <div class="why_cont_conteiner">
                                 <div class="why_cont_block">
-                                    <img class="why_icon" src="img/why/why_car.svg" alt="">
+                                    <img class="why_icon" src="img/why/why_car.svg" alt="why car">
                                     <h4>Якість</h4>
                                     <p>Насамперед, ми шукаємо якісне, «не вбите» нашими дорогами авто. Надійність
                                         автомобілів з пробігом в Європі набагато вище, ніж в Україні. Пробіги в Європі
@@ -217,7 +90,7 @@
                                         тис, навіть якщо це Golf 3.</p>
                                 </div>
                                 <div class="why_cont_block">
-                                    <img class="why_icon" src="img/why/why_list.svg" alt="">
+                                    <img class="why_icon" src="img/why/why_list.svg" alt="why list">
                                     <h4>Контроль</h4>
                                     <p>В Європі є обв'язковим проходження технічного огляду. Це дуже важливо, тому що на
                                         ньому можуть виявити технічні несправності. Власник авто буде змушений їх
@@ -225,7 +98,7 @@
                                         авто заборонено.</p>
                                 </div>
                                 <div class="why_cont_block">
-                                    <img class="why_icon" src="img/why/why_like.svg" alt="">
+                                    <img class="why_icon" src="img/why/why_like.svg" alt="why like">
                                     <h4>Технічний та візуальний стан</h4>
                                     <p>В Європі середньостатистичний громадянин оновлює свій автопарк раз в п'ять-сім
                                         років. Тому і авто, які вони продають, в досить хорошому технічному стані.
@@ -233,7 +106,7 @@
                                         кузову авто.</p>
                                 </div>
                                 <div class="why_cont_block">
-                                    <img class="why_icon" src="img/why/why_tech.svg" alt="">
+                                    <img class="why_icon" src="img/why/why_tech.svg" alt="why tech">
                                     <h4>Обслуговування</h4>
                                     <p>Автомобілі заправляються якісним пальним, від якого не псується турбіна, або
                                         взагалі перестає заводитись мотор. На плановому сервісному обслуговуванні
@@ -256,7 +129,6 @@
                 <div class="offer_list">
                     <div class="offer_list_container">
                         <div class="list">
-
                             <img src="img/offer/offer1.svg" alt="">
                             <p>Більше 500 000 км ми здолали, щоб привезти авто нашим клієнтам</p>
                         </div>
@@ -293,7 +165,7 @@
                         <h3>Про мене</h3>
                         <div>Мене звуть Максим Царіннік. Мій <a class="about_link" href="#">Instagram</a> та <a
                                 class="about_link" href="">Facebook</a>.</div>
-                        <p>Я займаюся пригоном автомобілів з Європи. <br /> За фахом я - автоінженер, закінчив НТУ, м.
+                        <p>Я займаюся пригоном автомобілів з Європи. <br> За фахом я - автоінженер, закінчив НТУ, м.
                             Київ. З автомобілями працюю вже понад 10 років.</p>
                         <p>Тут не буде гучних заяв про мою експертність і професіоналізмі. За 3 роки роботи
                             далекобійником на автовозі я об'їздив всю Європу і можу сказати просто: в машинах я дійсно
@@ -331,11 +203,11 @@
                                                     </div>
                                                     <p class="auto_name_top">Авто з Європи Nissan Qashqai 2007</p>
                                                     <p class="auto_name">Nissan Qashqai</p>
-                                                    <p class="auto_info">Рік випуску: 2007<br />
-                                                        Двигун: 1.6 бензин<br />
-                                                        КПП: механічна<br />
-                                                        Пробіг: 201 000 км<br />
-                                                        Комплектація: кондиціонер, литі диски, додаткові колеса<br />
+                                                    <p class="auto_info">Рік випуску: 2007<br>
+                                                        Двигун: 1.6 бензин<br>
+                                                        КПП: механічна<br>
+                                                        Пробіг: 201 000 км<br>
+                                                        Комплектація: кондиціонер, литі диски, додаткові колеса<br>
                                                         Без підкрасів</p>
                                                     <p class="auto_price">Ціна: 8500$</p>
                                                 </div>
@@ -353,12 +225,12 @@
                                                     <p class="auto_name_top">Авто з Європи Renault Clio Grand Tour 2009
                                                     </p>
                                                     <p class="auto_name">Renault Clio Grand Tour</p>
-                                                    <p class="auto_info">Рік випуску: 2009<br />
-                                                        Двигун: 1.2 турбо бензин<br />
-                                                        КПП: механічна<br />
-                                                        Пробіг: 152 000 км<br />
+                                                    <p class="auto_info">Рік випуску: 2009<br>
+                                                        Двигун: 1.2 турбо бензин<br>
+                                                        КПП: механічна<br>
+                                                        Пробіг: 152 000 км<br>
                                                         Комплектація: клімат-контроль, круїз-контроль,
-                                                        електросклопідйомники, регулювання дзеркал, литі диски.<br />
+                                                        електросклопідйомники, регулювання дзеркал, литі диски.<br>
                                                         Особливості: косметичний окрас кришки багажника, без шпаклівки.
                                                     </p>
                                                     <p class="auto_price">Ціна: 5600$</p>
@@ -376,13 +248,13 @@
                                                     </div>
                                                     <p class="auto_name_top">Авто з Європи Renault Megane 2012</p>
                                                     <p class="auto_name">Renault Megane</p>
-                                                    <p class="auto_info">Рік випуску: 2012<br />
-                                                        Двигун: 1.5 дизель<br />
-                                                        КПП: механічна<br />
-                                                        Пробіг: 138 000 км<br />
+                                                    <p class="auto_info">Рік випуску: 2012<br>
+                                                        Двигун: 1.5 дизель<br>
+                                                        КПП: механічна<br>
+                                                        Пробіг: 138 000 км<br>
                                                         Комплектція: двозонний клімат-контроль, круїз-контроль,
                                                         навігація, keyless доступ, задні парктроніки, датчики світла і
-                                                        дощу.<br />
+                                                        дощу.<br>
                                                         Без підкрасів</p>
                                                     <p class="auto_price">Ціна: 7800 $</p>
                                                 </div>
@@ -399,10 +271,10 @@
                                                     </div>
                                                     <p class="auto_name_top">Авто з Європи Dacia Sandero 2010</p>
                                                     <p class="auto_name">Dacia Sandero</p>
-                                                    <p class="auto_info">Рік випуску: 2010<br />
-                                                        Двигун: 1.2 бензин<br />
-                                                        Пробіг: 52 000 км<br />
-                                                        Без подкрасів.<br />
+                                                    <p class="auto_info">Рік випуску: 2010<br>
+                                                        Двигун: 1.2 бензин<br>
+                                                        Пробіг: 52 000 км<br>
+                                                        Без подкрасів.<br>
                                                         Дуже хороший стан!</p>
                                                     <p class="auto_price">Ціна: 4750$</p>
                                                 </div>
@@ -420,11 +292,11 @@
                                                     </div>
                                                     <p class="auto_name_top">Авто з Європи Dacia Sandero 2012</p>
                                                     <p class="auto_name">Dacia Sandero</p>
-                                                    <p class="auto_info">Рік випуску: 2012<br />
-                                                        Двигун: 1.2 бензин<br />
-                                                        Пробіг: 96 000 км<br />
+                                                    <p class="auto_info">Рік випуску: 2012<br>
+                                                        Двигун: 1.2 бензин<br>
+                                                        Пробіг: 96 000 км<br>
                                                         Комплектація: кондиціонер, гідропідсилювач керма, управління
-                                                        магнітолою на кермі, гучний зв'язок через Blutoоth<br />
+                                                        магнітолою на кермі, гучний зв'язок через Blutoоth<br>
                                                         Особливості: перефарбоване заднє ліве крило, задні ліві двері
                                                     </p>
                                                     <p class="auto_price">Ціна: 5200$</p>
@@ -443,13 +315,13 @@
                                                     </div>
                                                     <p class="auto_name_top">Авто з Європи Renault Megane 2013</p>
                                                     <p class="auto_name">Renault Megane</p>
-                                                    <p class="auto_info">Рік випуску: 2013<br />
-                                                        Двигун: 1.4 л бензин<br />
-                                                        КПП: механічна<br />
-                                                        Пробіг: 214 000 км<br />
+                                                    <p class="auto_info">Рік випуску: 2013<br>
+                                                        Двигун: 1.4 л бензин<br>
+                                                        КПП: механічна<br>
+                                                        Пробіг: 214 000 км<br>
                                                         Комлектация: комбінований салон, двозонний клімат-контроль,
                                                         круїз-контроль, навігація, keyless доступ, передні і задні
-                                                        парктроніки, датчики світла і дощу, фаркоп, колонки BOSE.<br />
+                                                        парктроніки, датчики світла і дощу, фаркоп, колонки BOSE.<br>
                                                         Особливості: косметичний окрас капота, без шпаклівки.</p>
                                                     <p class="auto_price">Ціна: 8800 $</p>
                                                 </div>
@@ -467,12 +339,12 @@
                                                     </div>
                                                     <p class="auto_name_top">Авто з Європи Peugeot 308 2015</p>
                                                     <p class="auto_name">Peugeot 308</p>
-                                                    <p class="auto_info">Рік випуску: 2015<br />
-                                                        Двигун: 1.6 дизель 86 кВт<br />
-                                                        Пробіг: 188 888 км<br />
+                                                    <p class="auto_info">Рік випуску: 2015<br>
+                                                        Двигун: 1.6 дизель 86 кВт<br>
+                                                        Пробіг: 188 888 км<br>
                                                         Комплектація: двухзонний клімат-контоль, круїз-контроль, датчики
                                                         світла, датчики дощу, підігрів сидінь, задні парктроніки, денні
-                                                        ходові вогні, литі диски, фаркоп и т.д.<br />
+                                                        ходові вогні, литі диски, фаркоп и т.д.<br>
                                                         Косметический підкрас однієї деталі</p>
                                                     <p class="auto_price">Цена: 9500$</p>
                                                 </div>
@@ -500,10 +372,8 @@
 
                 </div>
             </div>
-            </div>
         </section>
 
-        <!--Process-->
         <section id="process" class="process">
             <div class="process_bg">
                 <div class="container">
@@ -586,7 +456,6 @@
 
         </section>
 
-        <!--Services-->
         <section id="services" class="services">
             <div class="container">
                 <div class="services_container">
@@ -624,18 +493,13 @@
             </div>
         </section>
 
-        <!--Reviews-->
-
         <section id="reviews" class="reviews">
             <div class="container">
                 <div class="reviews_container">
                     <h3>Відгуки наших клієнтів</h3>
                     <div class="reviews_slider">
-
-                        <!-- Основной блок слайдера -->
                         <div class="slider2">
 
-                            <!-- Первый слайд -->
                             <div class="item">
                                 <div class="reviews_slider_container">
                                     <div class="reviews_img reviews_img1"></div>
@@ -650,7 +514,6 @@
                                 </div>
                             </div>
 
-                            <!-- Второй слайд -->
                             <div class="item">
                                 <div class="reviews_slider_container">
                                     <div class="reviews_img reviews_img2"></div>
@@ -663,7 +526,6 @@
                                 </div>
                             </div>
 
-                            <!-- Кнопки-стрелочки -->
                             <a class="previous" onclick="previousSlide()">&#10094;</a>
                             <a class="next" onclick="nextSlide()">&#10095;</a>
                         </div>
@@ -676,7 +538,6 @@
             </div>
         </section>
 
-        <!--faq-->
         <section id="faq" class="faq">
             <div class="container">
                 <div class="faq_container">
@@ -788,7 +649,6 @@
             </div>
         </section>
 
-        <!--Form-->
         <section id="contacts" class="form">
             <div class="container">
                 <div class="form_container">
@@ -799,19 +659,19 @@
                         <div class="contacts">
                             <h4>Контактна інформація</h4>
                             <div class="number">
-                                <p>+38 093 382 20 79 Максим</p>
-                                <p>+38 098 176 58 98 Ксенія</p>
+                                <p><a class="contacts_number" href="tel:+38093999999">+38 093 99 99 99</a> Максим</p>
+                                <p><a class="contacts_number" href="tel:+38093999999">+38 093 99 99 99</a> Максим</p>
                             </div>
                             <div class="time">
                                 <p>Час роботи:</p>
                                 <p>Пн-сб: 08:00-20:00</p>
                             </div>
-                            <div id="forma" class="form_soc">
+                            <div id="forma_f" class="form_soc">
                                 <ul class="social_form_list">
                                     <li><a href="#"><img class="social_header_img" src="img/soc/facebook-30.png"
-                                                alt=""></a></li>
+                                                alt="facebook"></a></li>
                                     <li><a href="#"><img class="social_header_img" src="img/soc/instagram-30.png"
-                                                alt=""></a></li>
+                                                alt="instagram"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -830,48 +690,42 @@
                 </div>
             </div>
         </section>
-
     </main>
-
-    <!--Footer-->
-    <footer>
-        <div class="footer_container">
-            <div class="adress">
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__address">
                 <h4>MaxAutohunter</h4>
                 <p>Пригон авто з Європи</p>
                 <p>м. Сміла, м.Черкаси</p>
-                <p>+38 093 382 20 79</p>
+                <p><a class="adress_number" href="tel:+38093999999">+38 093 99 99 99</a></p>
             </div>
-            <div class="footer_soc">
-                <ul class="social_footer_list">
-                    <li><a href="#"><img class="social_footer_img" src="img/soc/facebook-30.svg" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/max_autohunter/м"><img class="social_footer_img" src="img/soc/instagram-30.svg" alt=""></a></li>
+            <div class="footer__social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social_svg" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="22px" height="22px">
+                                <path d="M12,27V15H8v-4h4V8.852C12,4.785,13.981,3,17.361,3c1.619,0,2.475,0.12,2.88,0.175V7h-2.305C16.501,7,16,7.757,16,9.291V11 h4.205l-0.571,4H16v12H12z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a class="social__link" href="https://www.instagram.com/max_autohunter/м">
+                            <svg class="social_svg" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="22px" height="22px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="footer_top">
-                <a href="#top">Вгору <span class="footer_strelka">&#8657;</span></a>
-                <!-- <p><a href="#top">Вгору <span class="footer_strelka">&#8657;</span></a></p> -->
+            <div class="footer__top">
+                <a class="top__link" href="#top">Вгору <span class="footer__arrow">&#8657;</span></a>
             </div>
         </div>
     </footer>
 
     </div>
-    <!-- Подключаем файл скриптов -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-	<script src="js/berger.js"></script>
     <script src="js/reviews_slider.js"></script>
     <script src="js/chief-slider.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new ChiefSlider('.slider', {
-                loop: true,
-                autoplay: true,
-                interval: 6000,
-                refresh: true,
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -1,45 +1,6 @@
-
-/*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-    font-family: 'Montserrat',Arial,sans-serif;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
-
-
+@import url(reset.css);
+@import url(chief-slider.css);
+@import url(reviews_slider.css);
 
 .wrapper {
     font-family: 'Montserrat',Arial,sans-serif;
@@ -123,7 +84,7 @@ header {
 
 @media (max-width: 479px) {}
 
-.header__berger {
+.header__burger {
     display: none;
 }
 /* .logoImg {
@@ -135,6 +96,7 @@ header {
 .header__menu {
     margin: 0 auto;
     display: flex;
+    align-items: center;
 }
 
 .header__list {
@@ -152,8 +114,15 @@ header {
 }
 
 .header__link {
-    margin: 0 18px;
+    padding: 25px 15px;
+    margin: 0px 0px;
     color: #ffffff;
+    transition: color 1s;
+}
+
+.header__link:hover {
+    margin: 0 0px;
+    color: #ff0009;
 }
 
 .social_lang {
@@ -190,12 +159,26 @@ header {
     display: flex;
 }
 
-.social_header_list>li {
+
+.social__link {
     background-color: white;
     margin: 0 5px;
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.social__link:hover {
+    background-color: #ff0009;
+}
+
+.social__link:hover>.social_svg {
+    fill: #fff;
+    transition: all 1s;
 }
 
 .social_header_img {
@@ -219,8 +202,14 @@ header {
 
 @media (max-width: 479px) {}
 
-.lang_ua, .lang_ru {
+.lang {
     color: #fff;
+    margin: 0 10px;
+    transition: color 0.5s;
+}
+
+.lang:hover {
+    color: #ff0009;
     margin: 0 10px;
 }
 
@@ -238,7 +227,7 @@ header {
     .header__logo {
       flex: 0 0 200px;
     }
-    .header__berger {
+    .header__burger {
       display: block;
       position: relative;
       width: 30px;
@@ -246,8 +235,8 @@ header {
       position: relative;
       z-index: 3;
     }
-    .header__berger span {
-      background-color: rgb(130,131,135);
+    .header__burger span {
+      background-color: #fff;
       position: absolute;
       width: 100%;
       height: 2px;
@@ -255,8 +244,8 @@ header {
       top: 9px;
       transition: all 0.3s ease 0s;
     }
-    .header__berger:before,
-    .header__berger:after {
+    .header__burger:before,
+    .header__burger:after {
       content: '';
       background-color: rgb(255, 255, 255);
       position: absolute;
@@ -265,20 +254,20 @@ header {
       left: 0;
       transition: all 0.3s ease 0s;
     }
-    .header__berger:before {
+    .header__burger:before {
       top: 0;
     }
-    .header__berger:after {
+    .header__burger:after {
       bottom: 0;
     }
-    .header__berger.active span {
+    .header__burger.active span {
       transform: scale(0);
     }
-    .header__berger.active:before {
+    .header__burger.active:before {
       transform: rotate(45deg);
       top: 9px;
     }
-    .header__berger.active:after {
+    .header__burger.active:after {
       transform: rotate(-45deg);
       bottom: 9px;
     }
@@ -293,7 +282,6 @@ header {
       background-color: rgb(0, 0, 0);
       padding: 70px 10px 20px 10px;
       display: grid;
-      /* flex-direction: column; */
     }
     .social_lang {
         flex-direction: column;
@@ -336,8 +324,6 @@ header {
           border-top: 10px solid #000;
           border-right: 10px solid transparent;
       }
-  
-    /*-------*/
   }
 
 
@@ -349,12 +335,14 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    max-height: 1120px;
+    min-height: 600px;
     height: 100vh;
     top: 0px;
     right: 0px;
 }
 
-h1 {
+.car__title {
     font-size: 52px;
     line-height: 1.23;
     letter-spacing: 1px;
@@ -365,26 +353,7 @@ h1 {
     padding-top: 95px;
     padding-bottom: 0px;
 }
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 33px;
-        
-    }
-}
-
-@media (max-width: 479px) {
-    h1 {
-        font-size: 24px;
-        padding-top: 43px;
-    }
-}
-
-h2 {
+.car__subtitle {
     font-size: 30px;
     line-height: 1.23;
     letter-spacing: 1px;
@@ -393,50 +362,15 @@ h2 {
     font-weight: 600;
     margin-top: 25px;
 }
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 23px;
-    }
-}
-@media (max-width: 479px) {
-    h2 {
-        font-size: 16px;
-    }
-}
-
-.car_text>p {
+.car__text {
     font-size: 20px;
     line-height: 1.55;
-    color: #afafaf;
+    color: #fff;
     font-weight: 400;
     margin-top: 105px;
     margin-bottom: 30px;
 }
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
-
-@media (max-width: 768px) {
-    .car_text>p {
-        font-size: 18px;
-        margin-top: 90px;
-    }
-}
-
-@media (max-width: 479px) {
-    .car_text>p {
-        font-size: 13px;
-        margin-top: 16px;
-    }
-}
-
-.car_text>a {
+.car__link {
     display: inline-block;
     font-size: 16px;
     margin-top: 37px;
@@ -449,29 +383,50 @@ h2 {
     white-space: nowrap;
     vertical-align: middle;
     font-weight: 700;
+    transition: all 0.5s;
 }
 
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
+.car__link:hover {
+    color: #ff0009;
+    background-color: #ffffff;
+}
 
 @media (max-width: 768px) {
-    .car_text>a {
+    .car__title {
+        font-size: 33px;
+    }
+    .car__subtitle {
+        font-size: 23px;
+    }
+    .car__text {
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    .car__link {
         margin-top: 72px;
     }
 }
 
 @media (max-width: 479px) {
-    .car_text>a {
+    .car__title {
+        font-size: 24px;
+        padding-top: 43px;
+    }
+    .car__subtitle {
+        font-size: 16px;
+    }
+    .car__text {
+        font-size: 13px;
+        margin-top: 16px;
+    }
+    .car__link {
         margin-top: 30px;
         padding: 15px 30px 15px 30px;
         font-size: 14px;
     }
 }
 
-
-
-/*Why?*/
+/*Why*/
 
 .why {
     background-color:#fff;
@@ -483,10 +438,6 @@ h2 {
     max-width: 1150px;
     margin: 0 auto;
 }
-
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
 
 @media (max-width: 768px) {
     .why_blocks {
@@ -730,6 +681,12 @@ h2 {
 .about_link {
     color: #ff8562;
     text-decoration: none;
+    transition: color 1s;
+}
+
+.about_link:hover {
+    color: #ff0009;
+    text-decoration: none;
 }
 
 .about_left>p {
@@ -760,14 +717,6 @@ h2 {
 }
 
 @media (max-width: 479px) {}
-
-/*
-.about_right>img {
-    max-width: 100%;
-    max-height: 500px;
-}
-*/
-
 
 /*Auto*/
 
@@ -823,6 +772,7 @@ h2 {
 
 .dacia_sanrero_red {
     background-image: url(../img/auto/dacia_sanrero_red1.jpeg);
+    transition: all 0.5s;
 }
 
 .dacia_sanrero_red:hover {
@@ -831,6 +781,7 @@ h2 {
 
 .dacia_sanrero_w {
     background-image: url(../img/auto/dacia_sanrero_w1.jpeg);
+    transition: all 0.5s;
 }
 
 .dacia_sanrero_w:hover {
@@ -839,6 +790,7 @@ h2 {
 
 .renault_megan_black {
     background-image: url(../img/auto/renault_megan_black1.jpeg);
+    transition: all 0.5s;
 }
 
 .renault_megan_black:hover {
@@ -847,6 +799,7 @@ h2 {
 
 .peugeot_308 {
     background-image: url(../img/auto/peugeot_308_1.jpg);
+    transition: all 0.5s;
 }
 
 .peugeot_308:hover {
@@ -855,6 +808,7 @@ h2 {
 
 .nissan {
     background-image: url(../img/auto/nissan1.jpg);
+    transition: all 0.5s;
 }
 
 .nissan:hover {
@@ -863,6 +817,7 @@ h2 {
 
 .renault_clio {
     background-image: url(../img/auto/renault_clio1.jpg);
+    transition: all 0.5s;
 }
 
 .renault_clio:hover {
@@ -871,6 +826,7 @@ h2 {
 
 .renault_meg_red {
     background-image: url(../img/auto/renault_meg_red1.jpeg);
+    transition: all 0.5s;
 }
 
 .renault_meg_red:hover {
@@ -1190,6 +1146,13 @@ a.circle.circle_right {
     background-color: #ffffff;
     border-radius: 50px;
     font-weight: 700;
+    transition: all 1s;
+}
+
+.services_link:hover {
+    color: #fff;
+    background-color: #ff0d0d;
+    border: 1px solid #ff0d0d;
 }
 
 
@@ -1202,6 +1165,13 @@ a.circle.circle_right {
 @media (max-width: 768px) {
     .reviews {
         min-height: 100%;
+        padding: 0px 0px 120px 0px;
+    }
+}
+@media (max-width: 479px) {
+    .reviews {
+        min-height: 100%;
+        padding: 0px 0px 150px 0px;
     }
 }
 
@@ -1349,7 +1319,7 @@ a.circle.circle_right {
     background-color: #000;
     position: absolute;
     top: 40px;
-    transform: all 0.3s ease 0s;
+    transform: all 1s;
 }
 
 .faq_spoiler_title::before {
@@ -1379,6 +1349,10 @@ a.circle.circle_right {
     line-height: 1.4;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.faq_spoiler_text {
+    margin: 0px 25px
 }
 
 .faq_spoiler_text ul>li {
@@ -1468,6 +1442,15 @@ a.circle.circle_right {
     font-size: 20px;
 }
 
+.contacts_number {
+    color: #000;
+    transition: color 0.5s;
+}
+
+.contacts_number:hover {
+    color: #ff0009;
+}
+
 .time {
     margin-bottom: 30px;
 }
@@ -1541,7 +1524,7 @@ a.circle.circle_right {
 
 /*Footer*/
 
-.footer_container {
+.footer__container {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     column-gap: 0px;
@@ -1556,7 +1539,7 @@ a.circle.circle_right {
 @media (min-width: 991px) {}
 
 @media (max-width: 768px) {
-    .footer_container {
+    .footer__container {
         grid-template-columns: auto;
         row-gap: 20px;
         justify-items: center;
@@ -1565,7 +1548,7 @@ a.circle.circle_right {
 
 @media (max-width: 479px) {}
 
-.adress {
+.footer__address {
     color: #fff;
 }
 
@@ -1574,78 +1557,72 @@ a.circle.circle_right {
 @media (min-width: 991px) {}
 
 @media (max-width: 768px) {
-    .adress {
+    .footer__address {
         text-align: center;
     }
 }
 
 @media (max-width: 479px) {}
 
-.adress>h4 {
+.footer__address>h4 {
     font-size: 14px;
     line-height: 1.35;
     font-weight: 600;
 }
 
-.adress>p {
+.footer__address>p {
     font-weight: 300;
     line-height: 1.35;
     font-size: 14px;
 }
 
-.footer_soc {}
-.social_footer_list {}
-.social_footer_img {}
+.adress_number {
+    color: #fff;
+    transition: color 0.5s;
+}
+.adress_number:hover {
+    color: #ff0009;
+}
 
-.footer_soc {
+.footer__social {
     margin: 0 30px;
 }
 
-.footer_soc>ul {
+.social__list {
     display: flex;
     justify-content: center;
 }
 
-.social_footer_list>li {
+/* .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     margin: 0 5px;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-}
+} */
 
-.social_footer_img {
-    height: 22px;
-    width: 22px;
-    margin-top: 4px;
-    margin-left: 4px;
-}
-
-.footer_top {
+.footer__top {
     position: relative;
     text-align: right;
 }
 
-@media (max-width: 1200px) {}
-
-@media (min-width: 991px) {}
-
 @media (max-width: 768px) {
-    .footer_top {
+    .footer__top {
         text-align: center;
     }
 }
 
-@media (max-width: 479px) {}
 
-.footer_top>p {
-    position: absolute;
-    color: #fff;
-    
-}
-
-.footer_top a {
+.top__link {
     text-decoration: none;
     color: #fff;
     display: block;
+    transition: color 0.5s;
+}
+
+.top__link:hover {
+    color: #ff0009;
 }
